@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --el-color-primary: #66cc66;
+    --el-color-primary-dark-2: #44a544;
+    --el-color-primary-light-3: #81dc81;
+    --el-color-primary-light-4: #91e691;
+    --el-color-primary-light-5: #9cea9c;
+    --el-color-primary-light-6: #a7eca7;
+    --el-color-primary-light-7: #c4f4c4;
+    --el-color-primary-light-8: #d5f6d5;
+    --el-color-primary-light-9: #f2fbf2;
+    --primary-color-hover: rgba(102, 204, 102, 0.06);
+    --bg-gray: rgba(110, 120, 110, 0.06);
+    --border-gray: rgba(151, 151, 151, 0.4);
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+}
+
+#app {
+    height: 100%;
+}
+
+html, body {
+    height: 100vh;
+}
+
+::selection {
+    background: var( --el-color-primary);
+    color: white;
+}
+
+.el-menu {
+    --el-menu-active-color: var( --el-color-primary);
+    --el-menu-hover-bg-color: var(--primary-color-hover);
+    --el-menu-hover-text-color: var( --el-color-primary);
+    --el-menu-bg-color: var( --bg-gray);
+    --el-menu-border-color: var( --border-gray);
+}
+
+.el-button .el-button--primary {
+    --el-button-bg-color: var( --el-color-primary);
+}
+
+.el-form-item {
+    margin-bottom: 10px!important;
+}
+
